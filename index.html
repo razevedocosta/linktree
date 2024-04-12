@@ -1,62 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-blue.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://unpkg.com/feather-icons"></script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
-  <link rel="stylesheet" href="./bootstrap.min.css">
-  <link rel="stylesheet" href="./style.css">
-
-  <title>Meus Links</title>
+  <title>My Links</title>
 </head>
 
 <body>
-  <div class="container text-center pt-4">
+  <div class="container p-4">
 
     <figure class="figure">
       <img src="./background.jpg" class="figure-img img-fluid rounded" alt="...">
 
       <img src="./perfil.png" class="w3-round photo" alt="Foto de Rodrigo Azevedo">
 
+      <h5 class="name">Rodrigo Azevedo</h5>
       <figcaption class="figure-caption">Professor, Programador, Pai e Dono de Casa</figcaption>
-      <small>"A melhor parte de mim está na minha família!"</small>
+      <small>@r.azevedocosta</small>
     </figure>
 
-    <ul class="list-group">
+    <div class="links-container">
+      <!-- <a href="https://www.linkedin.com/in/rodrigoazevedo14/" class="w3-button w3-round w3-theme-d3 w3-border link" -->
       <a href="https://hotmart.com/pt-br/marketplace/produtos/como-ser-um-pai-de-casa-em-9-passos/Q92259874L"
+        class="w3-button w3-round w3-theme-d3 link" target="_blank">
+        <i data-feather="heart"></i> EBOOK: COMO SER UM PAI DE CASA
+      </a>
+
+      <a href="https://depoisdomeio.wordpress.com/" class="w3-button w3-round w3-theme-d3 link" target="_blank">
+        <i data-feather="youtube"></i> YOUTUBE
+      </a>
+
+      <a href="https://www.linkedin.com/in/rodrigoazevedo14/" class="w3-button w3-round w3-theme-d3 link"
         target="_blank">
-        <li class="list-group-item d-flex justify-content-between"><i class="bi bi-book-fill"></i> Ebook: Como ser um
-          pai de casa</li>
+        <i data-feather="linkedin"></i> LINKEDIN
       </a>
 
-      <a href="https://www.linkedin.com/in/rodrigoazevedo14/" target="_blank">
-        <li class="list-group-item d-flex justify-content-between"><i class="bi bi-youtube"></i> Aprenda programação
-        </li>
-      </a>
-      
-      <a href="https://www.linkedin.com/in/rodrigoazevedo14/" target="_blank">
-        <li class="list-group-item d-flex justify-content-between"><i class="bi bi-linkedin"></i> Linkedin</li>
+      <a href="https://github.com/razevedocosta" class="w3-button w3-round w3-theme-d3 link" target="_blank">
+        <i data-feather="github"></i> GITHUB
       </a>
 
-      <a href="https://github.com/razevedocosta" target="_blank">
-        <li class="list-group-item d-flex justify-content-between"><i class="bi bi-github"></i> Github</li>
+    </div>
+
+    <!-- <div class="links-container">
+      <div class="icons">
+        <h6>Projetos e ações que participo</h6>
+      </div>
+
+      <a href="https://www.instagram.com/gpbr.valedoitajai/" class="w3-button w3-round w3-theme-d3 w3-border link"
+        target="_blank">
+        <i data-feather="instagram"></i> Greenpeace Vale do Itajaí
       </a>
-    </ul>
+      <a href="https://www.instagram.com/geleoesdeblumenau1958" class="w3-button w3-round w3-theme-d3 w3-border link"
+        target="_blank">
+        <i data-feather="instagram"></i> GELB
+      </a>
+      <br>
+    </div> -->
 
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <script>
+    feather.replace()
+  </script>
 </body>
 
 </html>

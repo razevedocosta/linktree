@@ -1,51 +1,87 @@
-* {
-    background-color: transparent;
-
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-a {
-    text-decoration: none;
-    border-radius: 8px;
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
     height: 100vh;
+    text-align: center;
     background: rgb(112, 154, 195);
     background: linear-gradient(180deg, rgba(112, 154, 195, 1) 0%, rgba(222, 164, 176, 1) 100%);
 }
 
-small {
-    color: white;
-    font-size: 0.7rem;
-}
-
 .photo {
-    border: 3px solid #F3F4F9;
+    border: 2px solid white;
     border-radius: 50%;
-    margin-top: -70px;
+    margin-top: -50px;
     max-width: 70px;
     height: auto;
 }
 
 .figure-caption {
-    color: black;
-    font-size: 0.625rem;
-    font-weight: bold;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
-.list-group {
-    gap: 0.8rem;
-    font-size: 0.8rem;
-    margin-bottom: 0.8rem;
+.name {
+    margin-top: 10px !important;
 }
 
-.list-group-item {
-    border-radius: 8px;
+.w3-theme-d3 {
+    background-color: rgba(42, 169, 219, 0.274) !important;
+}
 
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+.w3-theme-d3:hover {
+    background-color: rgba(42, 169, 219, 0.8) !important;
+}
+
+a {
+    font-size: smaller;
+}
+
+.w3-border {
+    border: 1px solid #fff !important;
+    border-radius: 10px;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.links-container a {
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.icons {
+    display: flex;
+    gap: 24px;
+}
+
+.icons a {
+    text-decoration: none;
+}
+
+.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    min-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .link {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 400px;
+    }
 }
